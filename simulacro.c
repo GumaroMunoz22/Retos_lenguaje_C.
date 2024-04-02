@@ -1,26 +1,20 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-	
-	float i, n1, n2, suma;
+	int n1, n2, suma;
 	float promedio;
 	suma = 0;
-	n1 = 1;
-	n2 = 20;
 	
-	printf ("La suma y el promedio de los siguientes numero\n");
-	
-	for (i=n1; i<=n2; i++){
-		printf ("Numero %.0f \n", i);
-		suma = suma + i;
+	printf("Ingrese un el primer numero entero\n");
+	scanf("%d \n",&n1);
+	scanf("%d\n",&n2);
+	while(n1<=n2){
+		printf(" %d \n ", n1);
+		n1++;
+		
+		suma = suma + n1;
 	}
-
-	printf("\n La suma total es %.2f \n",suma);
-	
-	promedio = suma / 20;
-	
-	printf("\n El promedio es\n %.2f", promedio);
-	
+	printf("la suma total es \n %d", suma);
 	
 	return 0;
 }
